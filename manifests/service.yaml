@@ -9,5 +9,5 @@ spec:
   ports:
     - protocol: TCP
       port: 4030           # Port extenal
-      targetPort: 80    # Port in container
+      targetPort: 4030    # Port in container
   type: LoadBalancer     # LoadBalancer provide IP address
