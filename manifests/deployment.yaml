@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: taxrisk-portal
-  namespace: default
+  namespace: taxrisk-portal
 spec:
   replicas: 1
   selector:

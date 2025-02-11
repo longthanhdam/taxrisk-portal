@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: taxrisk-portal
-  namespace: default  # namespace the same deployement
+  namespace: taxrisk-portal  # namespace the same deployement
 spec:
   selector:
     app: taxrisk-portal  #  Pod choose Deployment label
