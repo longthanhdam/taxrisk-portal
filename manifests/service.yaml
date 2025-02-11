@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: taxrisk-portal
+  name: taxrisk-portal-service
   namespace: taxrisk-portal  # namespace the same deployement
 spec:
   selector:
-    app: taxrisk-portal  #  Pod choose Deployment label
+    app: taxrisk-portal-app  #  Pod choose Deployment label
   ports:
     - protocol: TCP
       port: 4030           # Port extenal

@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: taxrisk-portal
+  name: taxrisk-portal-app
   namespace: taxrisk-portal
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: taxrisk-portal
+      app: taxrisk-portal-app
   template:
     metadata:
       labels:
-        app: taxrisk-portal
+        app: taxrisk-portal-app
     spec:
       containers:
-      - name: taxrisk-portal
+      - name: taxrisk-portal-app
         image: mmregistry.mmvietnam.com:5000/taxrisk-portal:latest
         ports:
         - containerPort: 4030
