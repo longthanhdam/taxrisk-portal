@@ -8,6 +8,6 @@ spec:
     app: taxrisk-portal-app  #  Pod choose Deployment label
   ports:
     - protocol: TCP
-      port: 4030           # Port extenal
-      targetPort: 4030    # Port in container
+      port: 3030           # Port extenal
+      targetPort: 3030    # Port in container
   type: LoadBalancer     # LoadBalancer provide IP address

@@ -17,6 +17,6 @@ spec:
       - name: taxrisk-portal-app
         image: mmregistry.mmvietnam.com:5000/taxrisk-portal:latest
         ports:
-        - containerPort: 4030
+        - containerPort: 3030
       imagePullSecrets:
       - name: mmregistry-secret
